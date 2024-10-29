@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancer Research Foundation</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Layout */
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #4c5b7a;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #4c5b7a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .mission, .research, .findings {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .mission p, .findings p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .research-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .research-item {
+      background: #e4e4f7;
+      padding: 20px;
+      width: 45%;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: #e4e4f7;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #4c5b7a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #394264;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cancer Research Foundation</h1>
+      <p>Dedicated to advancing cancer research and finding a cure</p>
+    </header>
+
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>We aim to support and promote groundbreaking research that will lead to a deeper understanding of cancer and ultimately to a cure.</p>
+    </section>
+
+    <section class="research">
+      <h2>Research Areas</h2>
+      <div class="research-list">
+        <div class="research-item">
+          <h3>Genetics & Cancer</h3>
+          <p>Exploring the role of genetic mutations in cancer development and treatment responses.</p>
+        </div>
+        <div class="research-item">
+          <h3>Immunotherapy</h3>
+          <p>Investigating ways to use the body’s immune system to fight cancer more effectively.</p>
+        </div>
+        <div class="research-item">
+          <h3>Early Detection</h3>
+          <p>Developing tools and methods for detecting cancer in its earliest, most treatable stages.</p>
+        </div>
+        <div class="research-item">
+          <h3>Precision Medicine</h3>
+          <p>Creating tailored treatment plans based on individual genetic and molecular profiles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="findings">
+      <h2>Recent Findings</h2>
+      <p>Our latest studies have shown promising results in personalized cancer treatments, leading to improved survival rates for many types of cancer.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Cancer Research Foundation. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
